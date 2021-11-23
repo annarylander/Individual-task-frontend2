@@ -4,18 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./stylesheet/styles2.css" rel="stylesheet" />
+    <link href="./stylesheet/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <title>Event</title>
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+    <title>Evento</title>
   </head>
   <body>
     <header>
-      <h1>Event ☁️</h1>
+      <a class="logo" href="./index.html">Evento</a>
 
       <!-- Top Navigation Menu -->
       <nav class="menu">
@@ -25,10 +27,10 @@
       </nav>
     </header>
 
-    <!-- Top picture -->
+    <!-- Top picture parallax -->
     <div class="container-1">
       <div class="container-text">
-        <h2>Din eventbyrå i Stockholm</h2>
+        <h1>Din eventbyrå i Stockholm</h1>
         <button>Kontakta oss</button>
       </div>
     </div>
@@ -41,11 +43,11 @@
         />
         <h3>Kick off</h3>
         <ul>
-          <li>Datum:</li>
-          <li>Kort beskrivning:</li>
-          <li>Kategori:</li>
-          <button>Mer info</button>
-          <button>Länk</button>
+          <li>Datum: 12/1-22</li>
+          <li>Kategori: Nöje</li>
+          <a id="btn1" class="detail-btn">Mer info</a>
+          <li id="description1" class="description">Beskrivning av event</li>
+          <a class="detail-btn" href="./event-detalis.html">Se event</a>
         </ul>
       </div>
 
@@ -55,11 +57,11 @@
         />
         <h3>After work</h3>
         <ul>
-          <li>Datum:</li>
-          <li>Kort beskrivning:</li>
-          <li>Kategori:</li>
-          <button>Mer info</button>
-          <button>Länk</button>
+          <li>Datum: 4/2-22</li>
+          <li>Kategori: Nöje <li>
+          <a id="btn2" class="detail-btn">Mer info</a>
+          <li id="description2" class="description">Kort beskrivning:</li>
+          <a class="detail-btn" href="./event-detalis.html">Se event</a>
         </ul>
       </div>
       <div class="box-3">
@@ -68,11 +70,11 @@
         />
         <h3>Teambuilding</h3>
         <ul>
-          <li>Datum:</li>
-          <li>Kort beskrivning:</li>
-          <li>Kategori:</li>
-          <button>Mer info</button>
-          <button>Länk</button>
+          <li>Datum: 5/6-22</li>
+          <li>Kategori: Utbildning</li>
+          <a id="btn3" class="detail-btn">Mer info</a>
+          <li id="description3" class="description">Kort beskrivning:</li>
+          <a class="detail-btn" href="./event-detalis.html">Se event</a>
         </ul>
       </div>
       <div class="box-4">
@@ -81,37 +83,37 @@
         />
         <h3>Workshop</h3>
         <ul>
-          <li>Datum:</li>
-          <li>Kort beskrivning:</li>
-          <li>Kategori:</li>
-          <button>Mer info</button>
-          <button>Länk</button>
+          <li>Datum: 20/4-22</li>
+          <li>Kategori: Utbildning</li>
+          <a id="btn4" class="detail-btn">Mer info</a>
+          <li id="description4" class="description">Kort beskrivning:</li>
+          <a class="detail-btn" href="./event-detalis.html">Se event</a>
         </ul>
       </div>
       <div class="box-5">
         <img
-          src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=270&q=80"
+          src="https://images.unsplash.com/photo-1472653431158-6364773b2a56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=270&q=80"
         />
-        <h3>Fest</h3>
+        <h3>Sommarfest</h3>
         <ul>
-          <li>Datum:</li>
-          <li>Kort beskrivning:</li>
-          <li>Kategori:</li>
-          <button>Mer info</button>
-          <button>Länk</button>
+          <li>Datum: 25/4-22</li>
+          <li>Kategori: Nöje</li>
+          <a id="btn5" class="detail-btn">Mer info</a>
+          <li id="description5" class="description">Kort beskrivning:</li>
+          <a class="detail-btn" href="./event-detalis.html">Se event</a>
         </ul>
       </div>
       <div class="box-6">
         <img
-          src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=270&q=80"
+          src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=270&q=80"
         />
-        <h3>Gala</h3>
+        <h3>Matlagningsaktivitet</h3>
         <ul>
-          <li>Datum:</li>
-          <li>Kort beskrivning:</li>
-          <li>Kategori:</li>
-          <button>Mer info</button>
-          <button>Länk</button>
+          <li>Datum:10/10-22</li>
+          <li>Kategori: Mat</li>
+          <a id="btn6" class="detail-btn">Mer info</a>
+          <li id="description6" class="description">Kort beskrivning:</li>
+          <a class="detail-btn" href="./event-detalis.html">Se event</a>
         </ul>
       </div>
     </div>

@@ -1,28 +1,50 @@
-$primarycolor: rgb(59, 78, 101);
-$textcolor: rgb(23, 23, 23);
-$myFont: helvetica, sans-serif;
+@import "variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Shippori+Antique&family=Shippori+Antique+B1&display=swap");
 
 * {
   box-sizing: border-box;
-}
-
-body {
+  font-family: "Shippori Antique B1", sans-serif;
   margin: 0;
   padding: 0px;
-  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: $textColor;
+  font-size: 50px;
+  padding: 10px;
+  font-weight: 400;
+  
+}
+
+h2 {
+  color: $textColor;
+  font-size: 30px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+p {
+  color: $textColor;
+  font-size: 18px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
   background-color: #ffffff;
-  background-attachment: fixed;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  color: var($primaryColor);
+  color: $darkerColor;
+  margin-top: 40px;
 
-  h1 {
-    font-size: 50px;
-    padding: 10px;
+  .logo {
+    font-size: 55px;
+    padding: 20px;
+    color: $darkerColor;
+    font-weight: 900;
+    line-height: 1;
   }
 
   nav {
@@ -31,43 +53,47 @@ header {
     background-attachment: fixed;
 
     a {
-      text-decoration: none;
-      color: $textcolor;
       font-size: 20px;
       padding: 10px;
-      color: var($primaryColor);
+      color: $primaryColor;
       cursor: pointer;
     }
 
     a:hover {
-      color: rgb(0, 0, 0);
-      border-bottom: 1px solid black;
+      color: $darkerColor;
       transition: color 100ms ease-out;
     }
   }
 }
 
 .container-1 {
-  border: 1px #ccc solid;
-  padding: 0px;
   background-image: url(https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2369&q=80);
-  margin: 0;
   width: 100%;
   height: 100vh;
   background-attachment: fixed;
 
-  h2 {
-    color: white;
-    font-size: 50px;
+  .container-text {
+    text-align: center;
+    padding: 20px;
+
+    h1 {
+      margin-top: 100px;
+    }
   }
 
   button {
     border-radius: 20px;
-    padding: 5px, 25px;
+    margin-top: 20px;
+    padding: 5px 25px;
     border: none;
-    background-color: #ffffff;
-    color: rgb(59, 78, 101);
+    background-color: $textColor;
+    color: $darkerColor;
     font-size: 20px;
+  }
+
+  button:hover {
+    background-color: $lighterColor;
+    cursor: pointer;
   }
 }
 
@@ -78,23 +104,147 @@ header {
   justify-content: center;
 
   div {
-    border: 1px #ccc solid;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
+    background-color: #ffffff;
   }
 
   ul {
     list-style: none;
+    line-height: 1.5;
   }
 
-  button {
-    border-radius: 20px;
-    border: none;
-    padding: 28px, 20px;
-    margin: 20px, 0px, 0px;
-    color: rgb(255, 255, 255);
-    background-color: var($primaryColor);
+  .description {
+    display: none;
   }
 }
 
+.form-container {
+  background-color: $lighterColor;
+  height: 100vh;
+}
+.event-form {
+  text-align: center;
+  border: none;
+  color: $textColor;
+  margin: auto;
+
+  border-radius: 10px;
+
+  @media screen and (max-width: 992px) {
+    .event-form {
+      width: 100%;
+    }
+  }
+
+  label {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .create {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+#file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $textColor;
+  margin-top: 20px;
+}
+
+.about-container {
+  margin: auto;
+  padding: 40px;
+  background-color: $lighterColor;
+  height: 100vh;
+  overflow: scroll;
+
+  .about-text {
+    margin: auto;
+    width: 60%;
+  }
+}
+
+.team {
+  background-image: url(https://images.unsplash.com/photo-1633113214207-1568ec4b3298?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80);
+  margin: auto;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.contact {
+  background-color: $lighterColor;
+  height: 100vh;
+  display: flex;
+
+  button {
+    border-radius: 20px;
+    padding: 5px 25px;
+    border: none;
+    background-color: $textColor;
+    color: $darkerColor;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .ceo {
+    margin: auto;
+
+    a {
+      color: $textColor;
+    }
+  }
+}
+
+.event-container {
+  background-color: $lighterColor;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.detail-btn {
+  border-radius: 20px;
+  border: none;
+  padding: 3px 15px;
+  display: flex;
+  margin: 10px 0px;
+  color: $textColor;
+  background-color: $primaryColor;
+  cursor: pointer;
+}
+
+#message {
+  margin: auto;
+}
+
+.details-container {
+  background-color: $textColor;
+  height: 100vh;
+
+  .image-container {
+    margin: 40px;
+  }
+
+  .details {
+    margin: 40px;
+
+    ul {
+      list-style: none;
+      line-height: 2;
+    }
+
+    h2 {
+      color: $primaryColor;
+      font-weight: 800;
+    }
+  }
+}

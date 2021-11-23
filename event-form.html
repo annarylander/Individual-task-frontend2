@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./stylesheet/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Skapa event</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="./index.html">Evento</a>
+
+      <!-- Top Navigation Menu -->
+      <nav class="menu">
+        <a class="menu__item" href="./event-list.html"> Alla event </a>
+        <a class="menu__item" href="./event-form.html"> Skapa event </a>
+        <a class="menu__item" href="./about.html"> Om oss </a>
+      </nav>
+    </header>
+
+    <!-- Event-form -->
+    <div class="form-container">
+    <div class="event-form">
+      <h2>Skapa event</h2>
+
+      <form action="#">
+        <label for="name">Namn</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="date">Datum</label>
+        <input type="date" id="date" name="date" />
+
+        <label for="description">Beskrivning</label>
+        <input type="textarea" id="description" name="description" />
+
+        <label for="agenda">Agenda</label>
+        <input type="text" id="agenda" name="agenda" />
+
+        <label for="category">Kategori</label>
+        <select name="choice">
+          <option value="first">Utbildning</option>
+          <option value="second">Kick off</option>
+          <option value="third">After work</option>
+        </select>
+      </div>
+    </form>
+
+        <div id="file">
+        <label for="pictures">Välj bilder:</label>
+
+        <input type="file" id="myfile" name="myfile" />
+        <input type="file" id="myfile" name="myfile" />
+        <input type="file" id="myfile" name="myfile" />
+        <input type="file" id="myfile" name="myfile" />
+   
+
+      
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Shippori+Antique&family=Shippori+Antique+B1&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Shippori Antique B1", sans-serif;
+  margin: 0;
+  padding: 0px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 50px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+h2 {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+p {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #ffffff;
+  width: 100%;
+  color: #274553;
+  margin-top: 40px;
+}
+header .logo {
+  font-size: 55px;
+  padding: 20px;
+  color: #274553;
+  font-weight: 900;
+  line-height: 1;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  background-attachment: fixed;
+}
+header nav a {
+  font-size: 20px;
+  padding: 10px;
+  color: #516f7e;
+  cursor: pointer;
+}
+header nav a:hover {
+  color: #274553;
+  transition: color 100ms ease-out;
+}
+
+.container-1 {
+  background-image: url(https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2369&q=80);
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.container-1 .container-text {
+  text-align: center;
+  padding: 20px;
+}
+.container-1 .container-text h1 {
+  margin-top: 100px;
+}
+.container-1 button {
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 5px 25px;
+  border: none;
+  background-color: #fff;
+  color: #274553;
+  font-size: 20px;
+}
+.container-1 button:hover {
+  background-color: #80949d;
+  cursor: pointer;
+}
+
+.container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 150px;
+  justify-content: center;
+}
+.container-2 div {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.container-2 ul {
+  list-style: none;
+  line-height: 1.5;
+}
+.container-2 .description {
+  display: none;
+}
+
+.form-container {
+  background-color: #80949d;
+  height: 100vh;
+}
+
+.event-form {
+  text-align: center;
+  border: none;
+  color: #fff;
+  margin: auto;
+  border-radius: 10px;
+}
+@media screen and (max-width: 992px) {
+  .event-form .event-form {
+    width: 100%;
+  }
+}
+.event-form label {
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+}
+.event-form .create {
+  margin: 20px;
+  padding: 20px;
+}
+
+#file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.about-container {
+  margin: auto;
+  padding: 40px;
+  background-color: #80949d;
+  height: 100vh;
+  overflow: scroll;
+}
+.about-container .about-text {
+  margin: auto;
+  width: 60%;
+}
+
+.team {
+  background-image: url(https://images.unsplash.com/photo-1633113214207-1568ec4b3298?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80);
+  margin: auto;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.contact {
+  background-color: #80949d;
+  height: 100vh;
+  display: flex;
+}
+.contact button {
+  border-radius: 20px;
+  padding: 5px 25px;
+  border: none;
+  background-color: #fff;
+  color: #274553;
+  font-size: 15px;
+  cursor: pointer;
+}
+.contact .ceo {
+  margin: auto;
+}
+.contact .ceo a {
+  color: #fff;
+}
+
+.event-container {
+  background-color: #80949d;
+}
+.event-container h2 {
+  text-align: center;
+}
+
+.detail-btn {
+  border-radius: 20px;
+  border: none;
+  padding: 3px 15px;
+  display: flex;
+  margin: 10px 0px;
+  color: #fff;
+  background-color: #516f7e;
+  cursor: pointer;
+}
+
+#message {
+  margin: auto;
+}
+
+.details-container {
+  background-color: #fff;
+  height: 100vh;
+}
+.details-container .image-container {
+  margin: 40px;
+}
+.details-container .details {
+  margin: 40px;
+}
+.details-container .details ul {
+  list-style: none;
+  line-height: 2;
+}
+.details-container .details h2 {
+  color: #516f7e;
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=styles.css.map */
